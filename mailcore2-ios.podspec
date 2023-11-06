@@ -7,13 +7,13 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "BSD", :file => "LICENSE" }
   spec.author       = "MailCore Authors"
   spec.platform     = :ios, "8.0"
-  spec.source       = { :http => "https://d.etpan.org/mailcore2-deps/mailcore2-ios/mailcore2-ios-12.zip", :flatten => true }
+  spec.source       = { :http => "https://github.com/ju135/mailcore2/cocoapods-sources/mailcore2-ios-12.zip?raw=true", :flatten => true }
   spec.header_dir   = "MailCore"
   spec.requires_arc = false
-  spec.source_files = "cocoapods-build/include/MailCore/*.h"
-  spec.public_header_files = "cocoapods-build/include/MailCore/*.h"
-  spec.preserve_paths = "cocoapods-build/include/MailCore/*.h"
-  spec.vendored_libraries = "cocoapods-build/lib/libMailCore-ios.a"
+  spec.source_files = "include/MailCore/*.h"
+  spec.public_header_files = "include/MailCore/*.h"
+  spec.preserve_paths = "include/MailCore/*.h"
+  spec.vendored_libraries = "lib/libMailCore-ios.a"
   spec.libraries = ["xml2", "iconv", "z", "c++", "resolv"]
-  spec.prepare_command = "./scripts/build-mailcore2-ios-cocoapod.sh"
+  spec.prepare_command = "curl -O https://github.com/MailCore/mailcore2/raw/master/LICENSE"
 end
