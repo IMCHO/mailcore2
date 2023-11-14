@@ -1,3 +1,14 @@
+# Why this fork?
+
+This fork supports building the latest mailcore binary with Xcode 15. Some deprecated architectures (i386 simulator architecture and armv7/armv7s device architecture) got removed from the build pipeline which also led to a big decrease in binary file size (87MB to 18MB).  The shrunk binary is hosted in this repository and so are some older versions of the library in case the file hosted on d.etpan.org (see the official source in the [podspec](https://github.com/CocoaPods/Specs/blob/master/Specs/4/c/a/mailcore2-ios/0.6.3/mailcore2-ios.podspec.json#L13C14-L13C82)) becomes offline - unfortunately this happened quite often in the past. 
+
+If you want to use the podspec and updated source in this repository, you can do so by adding this to your Podfile:
+
+```
+pod 'mailcore2-ios', :podspec => 'https://raw.githubusercontent.com/ju135/mailcore2/master/mailcore2-ios.podspec'
+```
+
+
 ## MailCore 2: Introduction ##
 
 MailCore 2 provides a simple and asynchronous Objective-C API to work with the e-mail protocols **IMAP**, **POP** and **SMTP**. The API has been redesigned from the ground up.  It features:
