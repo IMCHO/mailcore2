@@ -8,6 +8,7 @@ If you want to use the podspec and updated source in this repository, you can do
 pod 'mailcore2-ios', :podspec => 'https://raw.githubusercontent.com/ju135/mailcore2/master/mailcore2-ios.podspec'
 ```
 
+Alternatively, you can just host the source yourself and update the link in the podspec.
 
 ## MailCore 2: Introduction ##
 
