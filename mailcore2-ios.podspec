@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "BSD", :file => "LICENSE" }
   spec.author       = "MailCore Authors"
   spec.platform     = :ios, "8.0"
-  spec.source       = { :http => "https://github.com/ju135/mailcore2/raw/master/cocoapods-sources/mailcore2-ios-12.zip", :flatten => true }
+  spec.source       = { :http => "https://github.com/ju135/mailcore2/raw/master/cocoapods-sources/mailcore2-ios-13.zip", :flatten => true }
   spec.header_dir   = "MailCore"
   spec.requires_arc = false
   spec.source_files = "include/MailCore/*.h"
